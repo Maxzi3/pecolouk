@@ -38,20 +38,14 @@ export default function HeroSlider() {
   const [animate, setAnimate] = useState(true);
   const startX = useRef(0);
   const endX = useRef(0);
-
-  // Auto-slide every 5s
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNext();
-    }, 5000);
-    return () => clearInterval(timer);
-  }, []);
+  const timerRef = useRef<NodeJS.Timeout | null>(null);
 
   const handlePrev = () => {
     setAnimate(false);
     setTimeout(() => {
       setCurrent((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
       setAnimate(true);
+      resetTimer();
     }, 50);
   };
 
@@ -60,8 +54,31 @@ export default function HeroSlider() {
     setTimeout(() => {
       setCurrent((prev) => (prev + 1) % slides.length);
       setAnimate(true);
+      resetTimer();
     }, 50);
   };
+
+  // Reset the timer and restart it
+  const resetTimer = () => {
+    if (timerRef.current) {
+      clearInterval(timerRef.current);
+    }
+    timerRef.current = setInterval(() => {
+      handleNext();
+    }, 5000);
+  };
+
+  useEffect(() => {
+    // Start the timer on mount
+    resetTimer();
+
+    // Clear the timer on unmount
+    return () => {
+      if (timerRef.current) {
+        clearInterval(timerRef.current);
+      }
+    };
+  }, []);
 
   // Touch gestures
   const handleTouchStart = (e: React.TouchEvent) => {
@@ -143,7 +160,10 @@ export default function HeroSlider() {
         {slides.map((_, idx) => (
           <button
             key={idx}
-            onClick={() => setCurrent(idx)}
+            onClick={() => {
+              setCurrent(idx);
+              resetTimer();
+            }}
             className={`w-3 h-3 rounded-full transition-colors ${
               idx === current ? "bg-brand-brown" : "bg-white/50"
             }`}

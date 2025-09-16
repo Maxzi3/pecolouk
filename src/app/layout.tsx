@@ -3,6 +3,7 @@ import { Nunito_Sans } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const nunitoSans = Nunito_Sans({
   subsets: ["latin"],
@@ -71,6 +72,7 @@ export default function RootLayout({
       <body className={`${nunitoSans.className} antialiased`}>
         <Navbar />
         {children}
+        <WhatsAppButton />
         <Footer />
       </body>
     </html>
