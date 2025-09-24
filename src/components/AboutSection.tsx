@@ -24,7 +24,7 @@ const AboutSection = () => {
               Who We Are
             </h2>
             <h2 className="text-3xl md:text-4xl font-extrabold text-brand-brown mb-6">
-              PECOLO
+              PE'COLO UK LIMITED
             </h2>
             <p className="text-lg text-muted-foreground mb-6">
               We simplify real estate. From managing properties

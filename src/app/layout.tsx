@@ -19,9 +19,9 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://pecolo.vercel.app"),
-  title: "Pecolo - Luxury Real Estate & Property Management",
+  title: "Pe'colo - Luxury Real Estate & Property Management",
   description:
-    "Pecolo offers premium property management, serviced apartments, rent-to-rent, and real estate investment solutions in London, UK. Trusted since 2010.",
+    "Pe'colo offers premium property management, serviced apartments, rent-to-rent, and real estate investment solutions in London, UK. Trusted since 2010.",
   keywords: [
     "luxury real estate",
     "property management",
@@ -32,17 +32,17 @@ export const metadata: Metadata = {
   ],
   robots: "index, follow",
   openGraph: {
-    title: "Pecolo - Luxury Real Estate & Property Management",
+    title: "Pe'colo - Luxury Real Estate & Property Management",
     description:
-      "Discover expert property management, serviced apartments, and investment solutions with Pecolo, your trusted partner in London real estate.",
+      "Discover expert property management, serviced apartments, and investment solutions with Pe'colo, your trusted partner in London real estate.",
     url: "https://pecolo.vercel.app",
-    siteName: "Pecolo",
+    siteName: "Pe'colo",
     images: [
       {
         url: "/images/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "Pecolo Luxury Real Estate",
+        alt: "Pe'colo Luxury Real Estate",
       },
     ],
     locale: "en_GB",
@@ -50,16 +50,16 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Pecolo - Luxury Real Estate & Property Management",
+    title: "Pe'colo - Luxury Real Estate & Property Management",
     description:
-      "Premium property management and real estate solutions in London. Explore serviced apartments, rent-to-rent, and more with Pecolo.",
+      "Premium property management and real estate solutions in London. Explore serviced apartments, rent-to-rent, and more with Pe'colo.",
     images: ["/images/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  manifest: "/site.webmanifest",
+  // manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({

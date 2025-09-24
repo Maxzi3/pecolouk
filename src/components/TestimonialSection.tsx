@@ -7,7 +7,7 @@ const testimonials = [
     role: "Property Investor",
     rating: 4,
     comment:
-      "Pecolo has been managing my property portfolio for 3 years. Their professionalism and attention to detail is unmatched. Highly recommended!",
+      "Pe'colo has been managing my property portfolio for 3 years. Their professionalism and attention to detail is unmatched. Highly recommended!",
   },
   {
     name: "Michael Chen",

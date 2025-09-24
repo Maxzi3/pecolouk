@@ -21,7 +21,7 @@ const Footer = () => {
             <p className="text-gray-200 mb-6 text-sm leading-relaxed">
               Your trusted partner in real estate excellence. Delivering
               professional property management and investment solutions since
-              2021.
+              2025.
             </p>
             <div className="flex space-x-4">
               {[
@@ -85,13 +85,13 @@ const Footer = () => {
               Contact Info
             </h4>
             <div className="space-y-3 text-sm">
-              <div className="flex items-start gap-3">
+              {/* <div className="flex items-start gap-3">
                 <MapPin className="h-5 w-5 flex-shrink-0 mt-0.5 text-brand-brown-light" />
                 <span className="text-gray-200">
                   24 blyth House, 535 southchurch Road, Southend on sea,Essex,
                   United Kingdom.
                 </span>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-brand-brown-light" />
                 <a
@@ -107,7 +107,7 @@ const Footer = () => {
                   href="mailto:info@estatecore.co.uk"
                   className="text-gray-200 hover:text-brand-brown-light transition-colors duration-200"
                 >
-                  Chike@pecolo.com
+                  pecolouk@gmail.com
                 </a>
               </div>
             </div>
@@ -116,8 +116,8 @@ const Footer = () => {
 
         <div className="border-t border-brand-brown-light mt-8 pt-8 text-center">
           <p className="text-gray-200 text-sm">
-            © {new Date().getFullYear()} Pecolo uk limited. All rights reserved.
-            |{" "}
+            © {new Date().getFullYear()} Pe'colo uk limited. All rights
+            reserved. |{" "}
             <Link
               href="#"
               className="hover:text-brand-brown-light transition-colors duration-200"

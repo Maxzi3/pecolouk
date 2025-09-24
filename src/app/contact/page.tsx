@@ -49,20 +49,20 @@ const ContactPage = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-3">
+              {/* <div className="flex items-center gap-3">
                 <MapPin className="h-6 w-6 text-brand-brown" />
                 <p className="text-muted-foreground">
                   24 blyth House, 535 southchurch Road, Southend on sea, Essex,
                   United Kingdom.
                 </p>
-              </div>
+              </div> */}
               <div className="flex items-center gap-3">
                 <Phone className="h-6 w-6 text-brand-brown" />
                 <p className="text-muted-foreground">+44 7466 285592</p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-6 w-6 text-brand-brown" />
-                <p className="text-muted-foreground">Chike@pecolo.com</p>
+                <p className="text-muted-foreground">pecolouk@gmail.com</p>
               </div>
               <div className="flex items-center gap-3">
                 <Clock className="h-6 w-6 text-brand-brown" />
@@ -73,7 +73,7 @@ const ContactPage = () => {
             </div>
 
             {/* Map Placeholder */}
-            <div className="h-56 w-full bg-secondary rounded-xl flex items-center justify-center shadow-md overflow-hidden">
+            {/* <div className="h-56 w-full bg-secondary rounded-xl flex items-center justify-center shadow-md overflow-hidden">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2481.504984055093!2d0.7304377000000001!3d51.5406386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47d8d843b4b0500f%3A0x43d45cd17de75d0e!2s24%2C%20Blyth%20House%2C%20535%20Southchurch%20Rd%2C%20Southend-on-Sea%20SS1%202AY%2C%20UK!5e0!3m2!1sen!2sng!4v1758044061665!5m2!1sen!2sng"
                 width="100%"
@@ -83,7 +83,7 @@ const ContactPage = () => {
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -1,6 +1,6 @@
 {
-  "name": "Pecolo Uk Limited",
-  "short_name": "Pecolo",
+  "name": "Pe'colo Uk Limited",
+  "short_name": "Pe'colo",
   "icons": [{ "src": "/icon.png", "sizes": "192x192", "type": "image/png" }],
   "theme_color": "#8B5A2B",
   "background_color": "#FFFFFF",

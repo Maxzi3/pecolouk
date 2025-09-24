@@ -64,7 +64,7 @@ const AboutPage = () => {
 
       <HeroSection
         title="About Us"
-        subtitle="With over 4 years of experience, Pecolo has become a trusted name in real estate. From property management to serviced apartments, we deliver exceptional service that creates lasting value."
+        subtitle="With over 4 years of experience, Pe'colo has become a trusted name in real estate. From property management to serviced apartments, we deliver exceptional service that creates lasting value."
         image="/images/hero-1.jpg"
       />
 
@@ -126,11 +126,11 @@ const AboutPage = () => {
       <section className="py-16 bg-secondary">
         <div className="container mx-auto px-6 text-center max-w-5xl">
           <h2 className="text-3xl font-bold text-brand-brown mb-6">
-            Why Choose Pecolo?
+            Why Choose Pe'colo?
           </h2>
           <p className="text-muted-foreground text-lg mb-8">
             Choosing the right partner in real estate can make all the
-            difference. At Pecolo, we pride ourselves on our proven track
+            difference. At Pe'colo, we pride ourselves on our proven track
             record, personalized service, and unwavering commitment to your
             success.
           </p>
@@ -143,7 +143,7 @@ const AboutPage = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold text-brand-brown text-center mb-12">
             Meet Our Team
@@ -171,7 +171,7 @@ const AboutPage = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
     </main>
   );
 };

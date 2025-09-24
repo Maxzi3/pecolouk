@@ -15,7 +15,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "property-management-trends-2025",
     title: "Property Management Trends 2025: What to Watch Out For",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "March 15, 2025",
     excerpt:
       "The property management industry is undergoing a digital revolution. From AI-powered automation to a greater focus on tenant experience, discover the key trends shaping the future and learn how to stay ahead of the curve.",
@@ -41,7 +41,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "maximizing-roi-rent-to-rent",
     title: "Maximizing Your ROI with Rent-to-Rent: A Comprehensive Guide",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "March 10, 2025",
     excerpt:
       "Looking for a low-risk, high-reward investment model? The rent-to-rent strategy offers a compelling path to predictable returns. This guide breaks down the core principles and proven strategies for success.",
@@ -68,7 +68,7 @@ export const blogPosts: BlogPost[] = [
     slug: "serviced-apartments-vs-hotels",
     title:
       "Serviced Apartments vs. Hotels: Why Corporate Clients are Making the Switch",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "March 5, 2025",
     excerpt:
       "For corporate clients, the choice between a serviced apartment and a hotel is becoming an easy one. Explore the numerous benefits, from enhanced comfort and flexibility to significant cost savings, that are driving this growing trend.",
@@ -94,7 +94,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "future-of-real-estate-investment",
     title: "The Future of Real Estate Investment: Emerging Opportunities",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Feb 28, 2025",
     excerpt:
       "The real estate landscape is shifting. New technologies and evolving investor preferences are creating exciting new opportunities, from fractional ownership to sustainable properties.",
@@ -124,7 +124,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "luxury-apartments-market-overview",
     title: "A Deep Dive into the Luxury Apartments Market",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Feb 20, 2025",
     excerpt:
       "The luxury rental sector is booming, fueled by a growing demand for premium, fully serviced accommodations. This overview provides insights into current trends, what tenants are looking for, and where the market is headed.",
@@ -150,7 +150,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "rent-to-rent-mistakes",
     title: "Rent-to-Rent Mistakes to Avoid: Lessons from Industry Experts",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Feb 15, 2025",
     excerpt:
       "The rent-to-rent model offers great potential, but it's not without its pitfalls. Learn from common mistakes made by new investors and discover the best practices for setting up your business for long-term success.",
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "sustainable-real-estate",
     title: "How Sustainability is Redefining Property Management",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Feb 10, 2025",
     excerpt:
       "Sustainability is no longer a niche concept but a key driver in the real estate market. This article explores how green certifications, energy efficiency, and eco-conscious design are influencing property values and tenant demand.",
@@ -202,7 +202,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "smart-homes-impact",
     title: "The Impact of Smart Homes on the Rental Market",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Feb 1, 2025",
     excerpt:
       "Smart technology is rapidly changing the rental market, from how landlords manage properties to what tenants expect. This post explores how smart home features are enhancing satisfaction and boosting property value.",
@@ -224,7 +224,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "corporate-housing-demand",
     title: "Rising Demand for Corporate Housing: What is Driving the Trend?",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Jan 25, 2025",
     excerpt:
       "Corporate relocations and long-term business projects are fueling a significant increase in demand for serviced apartments and corporate housing. Learn why businesses are choosing this flexible and cost-effective option for their staff.",
@@ -246,7 +246,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "property-renovation-tips",
     title: "Top Property Renovation Tips for Maximizing Value",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Jan 18, 2025",
     excerpt:
       "Looking to boost your property's value and rental potential? This guide provides actionable renovation tips, focusing on which upgrades offer the best return on investment and attract the most desirable tenants.",
@@ -268,7 +268,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "refurbishment-guide",
     title: "A Landlord’s Guide to Effective Property Refurbishment",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Jan 10, 2025",
     excerpt:
       "A successful refurbishment project requires careful planning and budgeting. This practical guide covers everything from setting a realistic timeline to choosing the right design strategies to transform your rental properties without overspending.",
@@ -290,7 +290,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "buying-selling-process",
     title: "The Property Buying and Selling Process Explained",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Jan 2, 2025",
     excerpt:
       "Navigating the real estate market can be complex. This comprehensive guide breaks down the property buying and selling process, providing a step-by-step overview from initial valuation to closing the deal.",
@@ -312,7 +312,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "legal-aspects-property",
     title: "Legal Aspects Every Landlord Should Know",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Dec 20, 2024",
     excerpt:
       "As a property owner, understanding your legal responsibilities is crucial. This article explores key legal aspects, including tenancy agreements, compliance requirements, and landlord rights, to help you avoid costly mistakes.",
@@ -334,7 +334,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "tenant-experience-matters",
     title: "Why Tenant Experience is the Key to Long-Term Success",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Dec 15, 2024",
     excerpt:
       "Happy tenants lead to longer leases and higher profits. This post explores how enhancing the tenant experience through good communication, valuable amenities, and responsive support can lead to long-term rental success.",
@@ -356,7 +356,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "short-vs-long-term-rentals",
     title: "Short-Term vs. Long-Term Rentals: Choosing Your Strategy",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Dec 10, 2024",
     excerpt:
       "Deciding between short-term rentals like Airbnb and stable long-term leases is a critical choice for investors. This article weighs the pros and cons of each strategy and helps you determine which fits your investment goals.",
@@ -378,7 +378,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "real-estate-financing",
     title: "Modern Real Estate Financing Options in 2025",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Dec 1, 2024",
     excerpt:
       "The world of real estate financing is evolving beyond traditional mortgages. This post explores modern solutions like crowdfunding, private lending, and portfolio loans, and helps you understand which options you can leverage this year.",
@@ -400,7 +400,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "property-marketing-strategies",
     title: "Effective Property Marketing Strategies in a Digital Age",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Nov 20, 2024",
     excerpt:
       "In today’s market, attracting tenants and buyers requires smart marketing. This article reveals digital strategies like social media advertising, virtual tours, and professional photography to market properties effectively and fill vacancies faster.",
@@ -422,7 +422,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "emerging-real-estate-markets",
     title: "Emerging Real Estate Markets to Watch in 2025",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Nov 10, 2024",
     excerpt:
       "For investors seeking new opportunities, emerging markets offer high growth potential and attractive returns. This article highlights top cities and regions poised for significant growth in the coming year and beyond.",
@@ -444,7 +444,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "future-of-serviced-apartments",
     title: "The Future of Serviced Apartments: Catering to Modern Travelers",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Nov 1, 2024",
     excerpt:
       "The serviced apartment sector is rapidly evolving to meet the needs of a new generation of travelers, from digital nomads to long-term business assignees. This article explores how new models are being tailored for flexibility and convenience.",
@@ -466,7 +466,7 @@ export const blogPosts: BlogPost[] = [
   {
     slug: "real-estate-technology",
     title: "How Technology is Transforming the Real Estate Industry",
-    author: "Pecolo Editorial Team",
+    author: "Pe'colo Editorial Team",
     date: "Oct 25, 2024",
     excerpt:
       "Technology is no longer a fringe element in real estate; it's a core component. This article explores how innovations like blockchain, AI-powered valuations, and virtual reality are reshaping how we buy, rent, and manage properties.",

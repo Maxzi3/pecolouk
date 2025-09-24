@@ -250,7 +250,7 @@ const ServicesPage = () => {
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Whether you want to manage your property, invest in real estate, or
-            find the perfect home, Pecolo is here to make it happen.
+            find the perfect home, Pe'colo is here to make it happen.
           </p>
           <Link href="/contact">
             <Button className="bg-brand-brown hover:bg-brand-brown-dark text-white">
