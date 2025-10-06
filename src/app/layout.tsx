@@ -18,7 +18,7 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://pecolo.vercel.app"),
+  metadataBase: new URL("https://www.pecolouk.com"),
   title: "Pe'colo - Luxury Real Estate & Property Management",
   description:
     "Pe'colo offers premium property management, serviced apartments, rent-to-rent, and real estate investment solutions in London, UK. Trusted since 2010.",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Pe'colo - Luxury Real Estate & Property Management",
     description:
       "Discover expert property management, serviced apartments, and investment solutions with Pe'colo, your trusted partner in London real estate.",
-    url: "https://pecolo.vercel.app",
+    url: "https://www.pecolouk.com",
     siteName: "Pe'colo",
     images: [
       {
