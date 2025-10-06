@@ -5,10 +5,10 @@ import {
   Mail,
   Facebook,
   Twitter,
-  Linkedin,
   Instagram,
 } from "lucide-react";
 import Logo from "./Logo";
+import { FaTiktok } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -25,14 +25,24 @@ const Footer = () => {
             </p>
             <div className="flex space-x-4">
               {[
-                { Icon: Facebook, href: "#" },
+                {
+                  Icon: Facebook,
+                  href: "https://www.facebook.com/share/1B7FMTcnXh/",
+                },
                 { Icon: Twitter, href: "#" },
-                { Icon: Linkedin, href: "#" },
-                { Icon: Instagram, href: "#" },
+                {
+                  Icon: FaTiktok,
+                  href: "https://www.tiktok.com/@pecolo.uk?_t=ZN-908f48WdPl8&_r=1",
+                },
+                {
+                  Icon: Instagram,
+                  href: "https://www.instagram.com/pecolo_uk?igsh=M3c2YmVjMHRnNzNi",
+                },
               ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
                   href={href}
+                  target="blank"
                   className="text-gray-200 hover:text-brand-brown-light transition-transform duration-200 hover:scale-110"
                   aria-label={Icon.name}
                 >

@@ -1,13 +1,74 @@
 "use client";
 
-import { MapPin, Phone, Mail, Clock, ArrowRight } from "lucide-react";
+import {
+  MapPin,
+  Phone,
+  Mail,
+  Clock,
+  ArrowRight,
+  Facebook,
+  Twitter,
+  Instagram,
+} from "lucide-react";
+import { FaTiktok } from "react-icons/fa6";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import Link from "next/link";
 import HeroSection from "@/components/HeroSection";
+import { useEffect, useState } from "react";
 
 const ContactPage = () => {
+  const [form, setForm] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [loading, setLoading] = useState(false);
+  const [status, setStatus] = useState<"success" | "error" | null>(null);
+  const [isValid, setIsValid] = useState(false);
+
+  // Email validation function
+  const validateEmail = (email: string) =>
+    /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  //  Check if all required fields are filled
+  useEffect(() => {
+    const { name, email, message } = form;
+    setIsValid(
+      name.trim() !== "" && message.trim() !== "" && validateEmail(email)
+    );
+  }, [form]);
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setLoading(true);
+    setStatus(null);
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(form),
+      });
+
+      if (!res.ok) throw new Error("Failed to send");
+
+      setStatus("success");
+      setForm({ name: "", email: "", phone: "", message: "" });
+    } catch (err) {
+      setStatus("error");;
+    } finally {
+      setLoading(false);
+    }
+  };
   return (
     <main className=" text-foreground">
       {/* Hero Section */}
@@ -25,14 +86,61 @@ const ContactPage = () => {
             <h2 className="text-2xl font-bold text-brand-brown mb-6">
               Send Us a Message
             </h2>
-            <form className="space-y-4">
-              <Input placeholder="Your Name" required />
-              <Input type="email" placeholder="Your Email" required />
-              <Input type="tel" placeholder="Your Phone" />
-              <Textarea placeholder="Your Message" className="h-32" required />
-              <Button className="bg-brand-brown hover:bg-brand-brown-dark text-white w-full">
-                Send Message <ArrowRight className="ml-2 h-4 w-4" />
+
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <Input
+                name="name"
+                placeholder="Your Name"
+                value={form.name}
+                onChange={handleChange}
+                required
+              />
+              <Input
+                name="email"
+                type="email"
+                placeholder="Your Email"
+                value={form.email}
+                onChange={handleChange}
+                required
+              />
+              <Input
+                name="phone"
+                type="tel"
+                placeholder="Your Phone"
+                value={form.phone}
+                onChange={handleChange}
+              />
+              <Textarea
+                name="message"
+                placeholder="Your Message"
+                className="h-32"
+                value={form.message}
+                onChange={handleChange}
+                required
+              />
+              <Button
+                type="submit"
+                disabled={!isValid || loading}
+                className={`w-full text-white ${
+                  isValid
+                    ? "bg-brand-brown hover:bg-brand-brown-dark"
+                    : "bg-gray-400 cursor-not-allowed"
+                }`}
+              >
+                {loading ? "Sending..." : "Send Message"}
+                {!loading && <ArrowRight className="ml-2 h-4 w-4" />}
               </Button>
+
+              {status === "success" && (
+                <p className="text-green-600 text-sm text-center">
+                  Message sent successfully!
+                </p>
+              )}
+              {status === "error" && (
+                <p className="text-red-600 text-sm text-center">
+                  Failed to send message. Try again later.
+                </p>
+              )}
             </form>
           </div>
 
@@ -69,6 +177,33 @@ const ContactPage = () => {
                 <p className="text-muted-foreground">
                   Mon – Fri: 9:00 AM – 6:00 PM
                 </p>
+              </div>
+              <div className="flex space-x-4">
+                {[
+                  {
+                    Icon: Facebook,
+                    href: "https://www.facebook.com/share/1B7FMTcnXh/",
+                  },
+                  { Icon: Twitter, href: "#" },
+                  {
+                    Icon: FaTiktok,
+                    href: "https://www.tiktok.com/@pecolo.uk?_t=ZN-908f48WdPl8&_r=1",
+                  },
+                  {
+                    Icon: Instagram,
+                    href: "https://www.instagram.com/pecolo_uk?igsh=M3c2YmVjMHRnNzNi",
+                  },
+                ].map(({ Icon, href }, i) => (
+                  <a
+                    key={i}
+                    href={href}
+                    target="blank"
+                    className="text-brand-brown hover:text-brand-brown-light transition-transform duration-200 hover:scale-110"
+                    aria-label={Icon.name}
+                  >
+                    <Icon className="h-5 w-5" />
+                  </a>
+                ))}
               </div>
             </div>
 
