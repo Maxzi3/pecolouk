@@ -82,7 +82,7 @@ const ContactPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-6 grid md:grid-cols-2 gap-12 max-w-6xl">
           {/* Contact Form */}
-          <div className="bg-white dark:bg-card shadow-lg rounded-2xl p-8">
+          <div className="bg-white dark:bg-card border rounded-2xl p-8">
             <h2 className="text-2xl font-bold text-brand-brown mb-6">
               Send Us a Message
             </h2>

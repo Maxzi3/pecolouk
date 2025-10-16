@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.pecolouk.com"),
   title: "Pe'colo - Luxury Real Estate & Property Management",
   description:
-    "Pe'colo offers premium property management, serviced apartments, rent-to-rent, and real estate investment solutions in London, UK. Trusted since 2010.",
+    "Pe'colo offers premium property management, serviced apartments, rent-to-rent, and real estate investment solutions in London, UK. Trusted since 2025.",
   keywords: [
     "luxury real estate",
     "property management",
@@ -59,7 +59,6 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  // manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({
