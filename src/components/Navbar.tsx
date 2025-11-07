@@ -101,7 +101,12 @@ const Navbar = () => {
                 <button
                   key={item.name}
                   onClick={() => handleNavClick(item)}
-                  className="block w-full text-left px-3 py-2 text-muted-foreground hover:text-foreground transition-colors"
+                  className={`block w-full text-left px-3 py-2  hover:text-foreground transition-colors  ${
+                  pathname === item.path
+                    ? "text-brand-brown underline underline-offset-4"
+                    : "text-foreground"
+                }`}
+                  
                 >
                   {item.name}
                 </button>

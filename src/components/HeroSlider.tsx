@@ -108,12 +108,14 @@ export default function HeroSlider() {
         {slides.map((slide, idx) => (
           <div key={slide.id} className="relative w-full h-full flex-shrink-0">
             {/* Background Image */}
+
             <Image
               src={slide.image}
               alt={slide.title}
               fill
-              priority={idx === 0}
+              priority
               className="object-cover brightness-70"
+    
             />
 
             {/* Overlay */}

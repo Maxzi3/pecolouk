@@ -11,7 +11,7 @@ const AboutSection = () => {
           {/* Image */}
           <div className="relative w-full h-80 lg:h-[400px] rounded-xl overflow-hidden shadow-lg">
             <Image
-              src="/images/aboutsection.image.jpg"
+              src="/images/about-section.jpg"
               alt="Real estate overview"
               fill
               className="object-cover"

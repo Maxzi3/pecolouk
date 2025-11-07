@@ -104,21 +104,15 @@ const Footer = () => {
               </div> */}
               <div className="flex items-center gap-3">
                 <Phone className="h-5 w-5 flex-shrink-0 text-brand-brown-light" />
-                <a
-                  href="tel:+442012345678"
-                  className="text-gray-200 hover:text-brand-brown-light transition-colors duration-200"
-                >
+                <p className="text-gray-200 transition-colors duration-200">
                   +44 7466 285592
-                </a>
+                </p>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="h-5 w-5 flex-shrink-0 text-brand-brown-light" />
-                <a
-                  href="mailto:info@estatecore.co.uk"
-                  className="text-gray-200 hover:text-brand-brown-light transition-colors duration-200"
-                >
+                <p className="text-gray-200  transition-colors duration-200 ">
                   pecolouk@gmail.com
-                </a>
+                </p>
               </div>
             </div>
           </div>
